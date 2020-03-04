@@ -6,57 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <link rel="stylesheet" type="text/css" href="edicaoDadosFornecedor.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Formulario </title>
+    <title>Atualizar Dados</title>
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="dropdown">
-            <button class="dropbtn" onclick="dropProduto()">
-                Produto
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="id_Produto">
-                <a href="#">Cadastro</a>
-                <a href="#">Pesquisa</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn" onclick="dropFornecedor()">
-                Fornecedor
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="id_Fornecedor">
-                <a href="formulario.html">Cadastro</a>
-                <a href="#">Pesquisa</a>
-            </div>
-        </div>
-    </div>
     <div class="cont">
-        <form>
-            <h1>Cadastro Fornecedor</h1>
+
+        <form method="#">
+
+            <h1>Atualizar Dados Fornecedor</h1>
 
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="inputEmail4">Razão Social</label>
-                    <input type="text" class="form-control" id="inputRazaoSocial" placeholder="" required minlength="3" maxlength="100">
-                </div>
-                <div class="form-group col-md-6">
                     <label for="inputPassword4">Nome Fantasia</label>
-                    <input type="text" class="form-control" id="inputNomeFantasia" placeholder="" required
-                        minlength="3" maxlength="100">
+                    <input type="text" class="form-control" id="inputNomeFantasia" placeholder="" required minlength="3"
+                        maxlength="100">
                 </div>
             </div>
             <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputAddress">CNPJ</label>
-                    <input type="text" class="form-control" id="inputCNPJ" placeholder="XX. XXX. XXX/XXXX-XX"
-                        maxlength="18" required minlength="14">
-                </div>
+
                 <div class="form-group col-md-6">
                     <label for="inputAddress">Inscrição Estadual</label>
                     <input type="text" class="form-control" id="inputInscricaoEstadual" placeholder="" maxlength="15"
@@ -64,7 +36,7 @@
                 </div>
             </div>
             <div class="form-row">
-                <div class="form-group col-md-12">
+                <div class="form-group col-md-6">
                     <label for="inputPassword4">Segmento</label>
                     <input type="text" class="form-control" id="inputSegmento"
                         placeholder="Eletrônicos, Móveis, Infantil" required minlength="3" maxlength="100">
@@ -75,11 +47,13 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required maxlength="100">
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" maxlength="100"
+                        required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputEmail4">Nome Contato</label>
-                    <input type="text" class="form-control" id="inputNomeContato" placeholder="" required minlength="2" maxlength="100">
+                    <input type="text" class="form-control" id="inputNomeContato" placeholder="" required minlength="2"
+                        maxlength="100">
                 </div>
             </div>
             <div class="form-row">
@@ -89,9 +63,10 @@
                         maxlength="14" required minlength="10">
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="botaoConfirmar btn btn-primary">Atualizar</button>
         </form>
     </div>
+    <script src="formulario.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -101,7 +76,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="main.js"></script>
 </body>
 
 </html>
